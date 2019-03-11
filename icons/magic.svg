@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="320" viewBox="0 0 11 32">
+  <title>Magic</title>
+
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" />
+      <stop offset="50%" />
+      <stop offset="100%" />
+    </linearGradient>
+
+    <style>
+      #handle {
+        fill: #cceeff;
+      }
+
+      #star {
+        fill: url(#gradient);
+      }
+
+      linearGradient stop:first-child {
+        animation: whiteGoldGold 3s ease-in-out infinite alternate;
+      }
+
+      linearGradient stop:nth-child(2) {
+        animation: goldWhiteGold 3s ease-in-out infinite alternate;
+      }
+
+      linearGradient stop:last-child {
+        animation: goldGoldWhite 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes whiteGoldGold {
+        0% {stop-color: white;}
+        50% {stop-color: gold;}
+        100% {stop-color: gold;}
+      }
+
+      @keyframes goldWhiteGold {
+        0% {stop-color: gold;}
+        50% {stop-color: white;}
+        100% {stop-color: gold;}
+      }
+
+      @keyframes goldGoldWhite {
+        0% {stop-color: gold;}
+        50% {stop-color: gold;}
+        100% {stop-color: white;}
+      }
+    </style>
+  </defs>
+
+  <path id="handle" d="M4.514 7.947h0.332c1.144 0 2.072 0.928 2.072 2.072v0 21.995h-2.403v-24.067z"></path>
+  <path id="star" d="M9.282 10.842l-3.543-1.835-3.516 1.877 0.651-3.934-2.874-2.765 3.943-0.598 1.743-3.587 1.788 3.564 3.949 0.551-2.839 2.8 0.699 3.928z"></path>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 32 32">
+  <title>Health</title>
+
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" />
+      <stop offset="100%" />
+    </linearGradient>
+
+    <style>
+      path {
+        fill: url(#gradient);
+      }
+
+      linearGradient stop:first-child {
+        animation: whiteGreen 3s ease-in-out infinite alternate;
+      }
+
+      linearGradient stop:last-child {
+        animation: greenWhite 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes whiteGreen {
+        0% {stop-color: white;}
+        100% {stop-color: #247209;}
+      }
+
+      @keyframes greenWhite {
+        0% {stop-color: #247209;}
+        100% {stop-color: white;}
+      }
+    </style>
+  </defs>
+
+  <path d="M31.896 19.849l-0.005-7.542-12.272 0.007v-12.314h-7.478v12.319l-12.142 0.005 0.005 7.544 12.137-0.007v12.139h7.478v-12.144l12.276-0.007z"></path>
+</svg>

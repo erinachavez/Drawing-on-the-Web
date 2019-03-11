@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="320" viewBox="0 0 23 32">
+  <title>Ring</title>
+
+  <defs>
+    <linearGradient id="bandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" />
+      <stop offset="50%" />
+      <stop offset="100%" />
+    </linearGradient>
+
+    <radialGradient id="jewelGradient" cx="75%" cy="25%" r="50%" fx="75%" fy="25%">
+      <stop offset="0%" style="stop-color: #fff;" />
+      <stop offset="100%" style="stop-color: #9b111e;" />
+    </radialGradient>
+
+    <style>
+      #star {
+        fill: #9b111e;
+      }
+
+      #jewel {
+        fill: url(#jewelGradient);
+      }
+
+      #band {
+        fill: url(#bandGradient);
+      }
+
+      linearGradient stop:first-child {
+        animation: whiteGoldGold 3s ease-in-out infinite alternate;
+      }
+
+      linearGradient stop:nth-child(2) {
+        animation: goldWhiteGold 3s ease-in-out infinite alternate;
+      }
+
+      linearGradient stop:last-child {
+        animation: goldGoldWhite 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes whiteGoldGold {
+        0% {stop-color: white;}
+        50% {stop-color: gold;}
+        100% {stop-color: gold;}
+      }
+
+      @keyframes goldWhiteGold {
+        0% {stop-color: gold;}
+        50% {stop-color: white;}
+        100% {stop-color: gold;}
+      }
+
+      @keyframes goldGoldWhite {
+        0% {stop-color: gold;}
+        50% {stop-color: gold;}
+        100% {stop-color: white;}
+      }
+    </style>
+  </defs>
+
+  <path id="star" d="M15.147 10.415l-3.441-1.725-3.37 1.857 0.576-3.804-2.806-2.632 3.796-0.627 1.636-3.483 1.77 3.418 3.816 0.478-2.701 2.741 0.724 3.779z"></path>
+  <path id="jewel" d="M15.111 5.274c0 1.931-1.565 3.497-3.497 3.497s-3.497-1.565-3.497-3.497c0-1.931 1.565-3.497 3.497-3.497s3.497 1.565 3.497 3.497z"></path>
+  <path id="band" d="M11.624 8.771c-6.415 0-11.614 5.2-11.614 11.614s5.2 11.614 11.614 11.614c6.414 0 11.614-5.2 11.614-11.614v0c0-6.415-5.2-11.614-11.614-11.614v0zM11.624 28.661c-4.569 0-8.274-3.704-8.274-8.274s3.704-8.274 8.274-8.274c4.569 0 8.274 3.704 8.274 8.274v0c0 4.569-3.704 8.274-8.274 8.274v0z"></path>
+</svg>
